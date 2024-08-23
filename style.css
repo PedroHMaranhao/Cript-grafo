@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* */
-
 :root {
-    --cor-primaria: #F3F5FC; /*azul claro esbranquiçado - backgound*/
+    --cor-primaria: #F3F5FC; /*azul claro esbranquiçado - background*/
     --cor-secundaria: #0A3871; /*azul escuro - textos principais e cor de destaque da página*/
     --cor-terciaria: #FFFFFF; /*branco - campo de saída de texto */
     --cor-quaternaria: #343A40; /*cinza escuro - destaque do texto de observação */
@@ -41,7 +39,6 @@ body{
     min-height: 464px;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     padding: 2% 2% 2% 2%;
 }
 
@@ -51,7 +48,8 @@ header {
 
 main {
     width: 100%;
-    /* border: solid black 1px; */ /*borda para testes de reponsividade e identificação de limite da tag visualmente*/ 
+    /* border: solid black 1px; */
+    /* for test purposes */
     display: flex;
     flex-direction: row;
     color: var(--cor-secundaria);
@@ -99,7 +97,6 @@ main {
     align-self: center;
     width: 100%;
     justify-content: space-between;
-    /* padding-bottom: 3%; */
 }
 .inputButtons {
     background-color: var(--cor-secundaria);
@@ -161,10 +158,10 @@ main {
     justify-content: space-between;
 }
 #copyButton {
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quaternaria);
     width: 100%;
-    border: solid var(--cor-secundaria) 2px;
+    border: solid var(--cor-quaternaria) 2px;
     border-radius: 16px;
     padding: 16px;
 }
@@ -172,7 +169,6 @@ main {
 footer {
     display: flex;
     width: 100%;
-    /* height: 4%; */
     min-height: 18px;
     max-height: 18px;
     align-items: flex-end; /*alinhamento vertical */
@@ -209,19 +205,24 @@ button:hover {
 
 #copyButton.copied {
     border-style: dashed;
+    background-color: var(--cor-sextenária);
+    color: var(--cor-secundaria);
+    border-color:var(--cor-secundaria);
 }
 #copyButton:hover {
     border-style: dashed;
+    color: var(--cor-secundaria);
+    border-color:var(--cor-secundaria);
     transition: all 1s;
 }
 
-/* h 430 w 768  or (max-height: 430)  */
 
 @media (max-height: 484px) {
     body {
         height: auto;
         max-height: fit-content;
         /* background-color: black; */
+        /* for test purposes */
     }
 }
 @media (max-width: 768px) {
@@ -240,6 +241,7 @@ button:hover {
     }
     main {
         /* background-color: blueviolet; */
+        /* for test purposes */
         flex-direction: column;
         align-items: center;
         justify-content:unset;
@@ -255,7 +257,6 @@ button:hover {
     }
     .inputFather {
         height: 65vh;
-        /* min-height: fit-content; */
     }
     #userInput {
         width: 100%;

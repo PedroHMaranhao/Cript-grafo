@@ -32,7 +32,7 @@ function validarTexto(callback, botaoSelecionado) {
     // Verifica se o texto contém apenas letras minúsculas e sem caracteres especiais ou acentuação
     if (!regexMinusculas.test(texto)) {
         document.getElementById('notFound').innerText = '';
-        document.getElementById('error').innerText = 'Erro: O texto deve conter apenas letras minúsculas sem caracteres especiais ou acentuação.';
+        document.getElementById('error').innerText = 'Erro: O texto deve conter apenas letras minúsculas sem caracteres especiais ou acentuação, e no mínimo um caractere.';
         return;
     }
 
