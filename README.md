@@ -15,6 +15,9 @@
 <h2>Recursos</h2>
 <ul>
   <li>Responsivo</li>
-  <li>Identificação para botões clicados</li>
-  <li>Remoção e adição de estruturas ou elementos em decorencia de funcionalidade ou resposividade</li>
+  <li>Identificação visual para botões clicados</li>
+  <li>Remoção e adição de estruturas ou elementos em decorência de funcionalidade ou resposividade</li>
 </ul>
+
+<h2>Mais informações</h2>
+<p>Projeto desenvolvido como requisito de qualificação da primeira fase do curso Oracle ONE, uma parceria entre a Oracle e a Alura para capacitação de desenvolvedores</p>
